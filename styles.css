@@ -1,0 +1,13 @@
+/* ===== CAMPAIGN BRAND STYLES ===== */
+    /* Navy + gold color system with crisp contrast and subtle emphasis */
+    :root{
+      --navy:#1a1a2e;
+      --gold:#d4af37;
+    }
+    html{scroll-behavior:smooth}
+    body{background:#f8fafc;color:#0f172a}
+    .brand-gradient{background:linear-gradient(135deg,#1a1a2e 0%,#22305f 55%,#0f172a 100%)}
+    .gold-gradient{background:linear-gradient(135deg,#d4af37 0%,#f6d97a 100%)}
+    .glass-card{backdrop-filter:blur(10px);background:rgba(255,255,255,.08)}
+    .section-shell{padding-left:1rem;padding-right:1rem}
+    @media (min-width:768px){.section-shell{padding-left:2rem;padding-right:2rem}}
