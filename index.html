@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- BASE:START (managed by Coding Agent — do not edit) -->
+<base href="/mayor-alan-perry-reelection/">
+<!-- BASE:END -->
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+
+<!-- SEO Meta Tags -->
+<title>Alan Perry for Hilton Head Island Mayor | Re-Election Campaign</title>
+<meta name="description" content="Professional, patriotic campaign landing page for Mayor Alan Perry’s reelection, featuring accomplishments, vision, events, supporter signup, donations, and an AI campaign assistant." />
+<meta property="og:title" content="Alan Perry for Hilton Head Island Mayor | Re-Election Campaign" />
+<meta property="og:description" content="Professional, patriotic campaign landing page for Mayor Alan Perry’s reelection, featuring accomplishments, vision, events, supporter signup, donations, and an AI campaign assistant." />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Alan Perry for Hilton Head Island Mayor | Re-Election Campaign" />
+<meta name="twitter:description" content="Professional, patriotic campaign landing page for Mayor Alan Perry’s reelection, featuring accomplishments, vision, events, supporter signup, donations, and an AI campaign assistant." />
+<!-- End SEO Meta Tags -->
+<script data-lp-token-hydrate>
+(function(){try{
+  var slug="lp-mril2gej-k88ia";
+  var SK='lp_access_'+slug;
+  var map={access_token:'lp_pw_',allowlist_access_token:'lp_al_',pin_access_token:'lp_pin_',paywall_access_token:'lp_paid_'};
+  var u=new URL(location.href);var found=null;var changed=false;
+  Object.keys(map).forEach(function(p){var v=u.searchParams.get(p);if(v){found=v;try{localStorage.setItem(map[p]+slug,v);}catch(e){}u.searchParams.delete(p);changed=true;}});
+  if(found){try{sessionStorage.setItem(SK,found);}catch(e){}}
+  else{try{if(!sessionStorage.getItem(SK)){var t=localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug);if(t)sessionStorage.setItem(SK,t);}}catch(e){}}
+  if(changed){try{history.replaceState(null,'',u.toString());}catch(e){}}
+  function getTok(){try{return sessionStorage.getItem(SK)||localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug);}catch(e){return null;}}
+  function needsToken(url,method){if(!url)return false;var s=String(url);var m=(method||'GET').toUpperCase();var isSheetWrite=(m==='POST'||m==='PATCH'||m==='PUT'||m==='DELETE')&&/\/sheet-rows(\/|$|\?)/.test(s);var isSheetRead=/\/sheet-data(\/|$|\?)/.test(s);var isLlm=/\/api\/landing-pages\/public\/[^/]+\/(llm|llm-config)(\/|$|\?)/.test(s);return isSheetWrite||isSheetRead||isLlm;}
+  if(window.fetch){var _f=window.fetch;window.fetch=function(input,init){try{var url=typeof input==='string'?input:(input&&input.url)||'';var method=(init&&init.method)||(input&&input.method)||'GET';if(needsToken(url,method)){var tok=getTok();if(tok){init=init||{};var h=new Headers(init.headers||(typeof input!=='string'?input.headers:undefined)||{});if(!h.has('X-Landing-Page-Token'))h.set('X-Landing-Page-Token',tok);init.headers=h;}}}catch(e){}return _f.call(this,input,init);};}
+  if(window.XMLHttpRequest){var _o=XMLHttpRequest.prototype.open;var _s=XMLHttpRequest.prototype.send;XMLHttpRequest.prototype.open=function(m,u){this.__lpM=m;this.__lpU=u;return _o.apply(this,arguments);};XMLHttpRequest.prototype.send=function(){try{if(needsToken(this.__lpU,this.__lpM)){var tok=getTok();if(tok)this.setRequestHeader('X-Landing-Page-Token',tok);}}catch(e){}return _s.apply(this,arguments);};}
+}catch(e){}})();
+</script>
+
+<script data-gate>
+(function(){
+  var slug='lp-mril2gej-k88ia';var apiBase='https://my.chatbees.io';var currency='USD';var presets=[2500,5000,10000,25000];var minAmt=100;var maxAmt=1000000;var thankYouMsg='Thank you for your generous donation!';
+  var successSubtext='Your donation has been processed successfully.';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='';
+  function getLang(){var l=(document.documentElement.lang||navigator.language||'en').toLowerCase();return l.split('-')[0];}
+  function getLocale(){return (document.documentElement.lang||navigator.language||'en');}
+  var I18N={en:{min:'Minimum is ',max:'Maximum is ',emailPrompt:'Enter your email for the receipt:',emailRequired:'An email address is required to complete checkout.',failed:'Failed to process donation'},fr:{min:'Le minimum est ',max:'Le maximum est ',emailPrompt:'Entrez votre adresse e-mail pour le reçu :',emailRequired:'Une adresse e-mail est requise pour finaliser le paiement.',failed:'Échec du traitement du don'},es:{min:'El mínimo es ',max:'El máximo es ',emailPrompt:'Introduce tu correo electrónico para el recibo:',emailRequired:'Se requiere una dirección de correo electrónico para completar el pago.',failed:'No se pudo procesar la donación'},pt:{min:'O mínimo é ',max:'O máximo é ',emailPrompt:'Insira seu e-mail para o recibo:',emailRequired:'Um endereço de e-mail é necessário para concluir o pagamento.',failed:'Falha ao processar a doação'},de:{min:'Mindestbetrag ist ',max:'Höchstbetrag ist ',emailPrompt:'Geben Sie Ihre E-Mail-Adresse für die Quittung ein:',emailRequired:'Eine E-Mail-Adresse ist erforderlich, um den Checkout abzuschließen.',failed:'Spende konnte nicht verarbeitet werden'},it:{min:'Il minimo è ',max:'Il massimo è ',emailPrompt:'Inserisci la tua email per la ricevuta:',emailRequired:"È richiesto un indirizzo email per completare il pagamento.",failed:'Impossibile elaborare la donazione'}};
+  function t(k){var L=getLang();return (I18N[L]&&I18N[L][k])||I18N.en[k];}
+  function fmtD(c){try{return new Intl.NumberFormat(getLocale(),{style:'currency',currency:currency}).format(c/100);}catch(e){return new Intl.NumberFormat('en-US',{style:'currency',currency:currency}).format(c/100);}}
+  function findDonEmail(){var ids=['email','emailAddress','buyer-email','buyerEmail','donor-email','donorEmail','user-email','userEmail','contact-email'];for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.indexOf('@')>-1)return el.value.trim();}var inputs=document.querySelectorAll('input[type="email"],input[name*="email"],input[placeholder*="email"],input[placeholder*="Email"]');for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.indexOf('@')>-1)return inputs[j].value.trim();}return '';}
+  function findDonName(){var ids=['name','fullName','full-name','donor-name','donorName','customer-name','user-name'];for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value)return el.value.trim();}var inputs=document.querySelectorAll('input[name*="name"]:not([name*="email"]):not([type="email"]),input[placeholder*="name"]:not([placeholder*="email"]):not([type="email"])');for(var j=0;j<inputs.length;j++){if(inputs[j].value)return inputs[j].value.trim();}return '';}
+  function findDonPhone(){var ids=['phone','phoneNumber','phone-number','tel','telephone','mobile','mobileNumber','cell','contact-phone','buyer-phone'];for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.trim())return el.value.trim();}var inputs=document.querySelectorAll('input[type="tel"],input[name*="phone"],input[name*="tel"],input[name*="mobile"],input[placeholder*="phone"],input[placeholder*="Phone"]');for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.trim())return inputs[j].value.trim();}return '';}
+  window.__processDonation=function(a,b,c,d){
+    var amountCents,email='',donorName='',donorMessage='',productName='',productDescription='',quantity=1;
+    if(a&&typeof a==='object'){
+      amountCents=a.amountCents||(a.amount?Math.round(Number(a.amount)*100):0);
+      email=a.email||'';
+      productName=a.productName||a.label||'';
+      productDescription=a.productDescription||a.description||'';
+      donorName=a.name||a.donorName||'';
+      donorMessage=a.message||a.donorMessage||'';
+      quantity=a.quantity&&parseInt(a.quantity,10)>0?parseInt(a.quantity,10):1;
+    }else{
+      amountCents=typeof a==='number'?a:(parseInt(a,10)||0);
+      var rest=[b,c,d];var nonEmail=[];
+      for(var i=0;i<rest.length;i++){var v=rest[i];if(typeof v==='string'&&v){if(!email&&v.indexOf('@')>-1&&/^[^s@]+@[^s@]+.[^s@]+$/.test(v.trim())){email=v.trim();}else{nonEmail.push(v);}}}
+      donorName=nonEmail[0]||'';donorMessage=nonEmail[1]||'';
+    }
+    if(!email)email=findDonEmail();
+    if(!donorName)donorName=findDonName();
+    var donorPhone=findDonPhone();
+    if(!amountCents||amountCents<minAmt){alert(t('min')+fmtD(minAmt));return Promise.reject('below_min');}
+    if(amountCents>maxAmt){alert(t('max')+fmtD(maxAmt));return Promise.reject('above_max');}
+    if(!email){var p=window.prompt(t('emailPrompt'),'');if(p&&p.indexOf('@')>-1){email=p.trim();}else{alert(t('emailRequired'));return Promise.reject('no_email');}}
+    var successBase=window.location.href.split('?')[0];
+    return fetch(apiBase+'/api/landing-pages/public/'+slug+'/donation/checkout',{
+      method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({email:email,name:donorName||'',phone:donorPhone||'',amountCents:amountCents,message:donorMessage||'',productName:productName||'',productDescription:productDescription||'',quantity:quantity,locale:getLocale(),successUrl:successBase+'?donation=success&email='+encodeURIComponent(email)+'&session_id={CHECKOUT_SESSION_ID}',cancelUrl:successBase+'?donation=cancelled'})
+    }).then(function(r){return r.json();}).then(function(d){
+      if(d.checkoutUrl){window.location.href=d.checkoutUrl;}
+      else{alert(d.error||t('failed'));throw new Error(d.error);}
+    });
+  };
+  window.__donationConfig={currency:currency,presets:presets.map(function(c){return c/100;}),minAmount:minAmt/100,maxAmount:maxAmt/100,formatAmount:fmtD};
+  document.addEventListener('DOMContentLoaded',function(){
+    var urlParams=new URLSearchParams(window.location.search);
+    if(urlParams.get('donation')==='success'){
+      var sidD=urlParams.get('session_id');
+      if(sidD){try{fetch(apiBase+'/api/landing-pages/public/'+slug+'/checkout/confirm',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sessionId:sidD})}).catch(function(){});}catch(e){}}
+      var overlay=document.createElement('div');overlay.id='donation-success-overlay';
+      overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
+      function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">'+esc(thankYouMsg)+'</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(successSubtext)+'</p><button id="lp-don-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
+      document.body.appendChild(overlay);
+      var dBtn=document.getElementById('lp-don-success-btn');
+      if(dBtn){dBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
+    }
+  });
+})();
+</script>
+<script data-field-replace>
+(function(){
+  var params=new URLSearchParams(window.location.search);
+  var fields={};
+  var paramMap={
+    'first_name':'firstName','last_name':'lastName','full_name':'fullName',
+    'email':'email','phone':'phone','company':'company',
+    'city':'city','state':'state','country':'country'
+  };
+  var skipTags={'SCRIPT':1,'STYLE':1,'NOSCRIPT':1,'TEXTAREA':1,'CODE':1,'PRE':1};
+  var hasUrlFields=false;
+  for(var p in paramMap){
+    var v=params.get(p);
+    if(v){fields[paramMap[p]]=v;hasUrlFields=true;}
+  }
+  var contactId=params.get('contact_id');
+  function esc(s){
+    if(!s)return s;
+    var d=document.createElement('div');
+    d.appendChild(document.createTextNode(s));
+    return d.innerHTML;
+  }
+  function doReplace(data){
+    var r={};
+    r['{{full_name}}']=esc(((data.firstName||'')+' '+(data.lastName||'')).trim()||((data.fullName||data.name)||''));
+    r['{{first_name}}']=esc(data.firstName||(data.name?data.name.split(' ')[0]:'')||'');
+    r['{{last_name}}']=esc(data.lastName||(data.name&&data.name.indexOf(' ')>-1?data.name.substring(data.name.indexOf(' ')+1):'')||'');
+    r['{{email}}']=esc(data.email||'');
+    r['{{phone}}']=esc(data.phone||'');
+    r['{{company}}']=esc(data.company||'');
+    r['{{city}}']=esc(data.city||'');
+    r['{{state}}']=esc(data.state||'');
+    r['{{country}}']=esc(data.country||'');
+    r['{{date}}']=new Date().toLocaleDateString();
+    r['{{time}}']=new Date().toLocaleTimeString();
+    r['{{location}}']=[data.city,data.state,data.country].filter(Boolean).join(', ');
+    r['{{tracking_id}}']=esc(data.trackingId||'');
+    r['{{lastClickedProduct}}']=esc(data.lastClickedProduct||'');
+    r['{{lastProductClickDate}}']=esc(data.lastProductClickDate||'');
+    r['{{lastClickedProductPrice}}']=esc(data.lastClickedProductPrice||'');
+    r['{{lastClickedProductURL}}']=esc(data.lastClickedProductURL||'');
+    r['{{productsClickedCount}}']=esc(data.productsClickedCount||'0');
+    r['{{ip_address}}']=esc(data.ipAddress||'');
+    r['{{ip}}']=esc(data.ipAddress||'');
+    if(data.customFields){
+      for(var k in data.customFields){
+        r['{{'+k+'}}']=esc(String(data.customFields[k]||''));
+      }
+    }
+    params.forEach(function(v,k){
+      if(!paramMap[k]&&k!=='contact_id'&&k!=='page_id'&&k.indexOf('utm_')!==0){
+        r['{{'+k+'}}']=esc(v);
+      }
+    });
+    var hasValues=false;
+    for(var key in r){if(r[key]){hasValues=true;break;}}
+    if(!hasValues)return;
+    var walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{
+      acceptNode:function(n){
+        var p=n.parentNode;
+        if(p&&skipTags[p.nodeName])return NodeFilter.FILTER_REJECT;
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    });
+    var node;
+    while(node=walker.nextNode()){
+      var txt=node.nodeValue;
+      if(txt&&txt.indexOf('{{')>-1){
+        var changed=txt;
+        for(var ph in r){
+          if(r[ph]&&changed.indexOf(ph)>-1){
+            changed=changed.split(ph).join(r[ph]);
+          }
+        }
+        if(changed!==txt)node.nodeValue=changed;
+      }
+    }
+    var attrs=['value','placeholder','content','alt','title'];
+    attrs.forEach(function(attr){
+      var els=document.querySelectorAll('['+attr+'*="{{"]');
+      for(var i=0;i<els.length;i++){
+        var tag=els[i].tagName;
+        if(skipTags[tag])continue;
+        var val=els[i].getAttribute(attr);
+        if(val){
+          var nv=val;
+          for(var ph in r){
+            if(r[ph]&&nv.indexOf(ph)>-1){
+              nv=nv.split(ph).join(r[ph]);
+            }
+          }
+          if(nv!==val)els[i].setAttribute(attr,nv);
+        }
+      }
+    });
+  }
+  function run(){
+    if(contactId){
+      var xhr=new XMLHttpRequest();
+      xhr.open('GET','https://my.chatbees.io/api/landing/context/'+encodeURIComponent(contactId)+'?page_id=5479');
+      xhr.onload=function(){
+        if(xhr.status===200){
+          try{
+            var resp=JSON.parse(xhr.responseText);
+            if(resp.success&&resp.contact){
+              var merged=resp.contact;
+              for(var k in fields){merged[k]=fields[k];}
+              doReplace(merged);
+              return;
+            }
+          }catch(e){}
+        }
+        if(hasUrlFields)doReplace(fields);
+      };
+      xhr.onerror=function(){if(hasUrlFields)doReplace(fields);};
+      xhr.send();
+    }else if(hasUrlFields){
+      doReplace(fields);
+    }
+  }
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',run);}
+  else{run();}
+})();
+</script>
+<script data-payment>
+(function(){
+  var slug='pfXxsZSFix';
+  var apiBase='https://my.chatbees.io';
+  var successSubtext='';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='';
+  function findEmail(){
+    var ids=['email','emailAddress','buyer-email','buyerEmail','user-email','userEmail','checkout-email','customer-email','contact-email'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.includes('@'))return el.value.trim();}
+    var inputs=document.querySelectorAll('input[type="email"],input[name*="email"],input[placeholder*="email"],input[placeholder*="Email"]');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.includes('@'))return inputs[j].value.trim();}
+    return '';
+  }
+  function findName(){
+    var ids=['name','fullName','full-name','buyer-name','buyerName','customer-name','userName','user-name'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value)return el.value.trim();}
+    var inputs=document.querySelectorAll('input[name*="name"]:not([name*="email"]):not([type="email"]),input[placeholder*="name"]:not([placeholder*="email"]):not([type="email"]),input[placeholder*="Name"]:not([type="email"])');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value)return inputs[j].value.trim();}
+    return '';
+  }
+  function findPhone(){var ids=['phone','phoneNumber','phone-number','tel','telephone','mobile','mobileNumber','cell','contact-phone','buyer-phone'];for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.trim())return el.value.trim();}var inputs=document.querySelectorAll('input[type="tel"],input[name*="phone"],input[name*="tel"],input[name*="mobile"],input[placeholder*="phone"],input[placeholder*="Phone"]');for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.trim())return inputs[j].value.trim();}return '';}
+  var __realProcessPayment=function(a,b,c,d,e){
+    var amountCents,email,productName,productDescription,customerName,quantity;
+    if(a&&typeof a==='object'){
+      amountCents=a.amountCents;email=a.email;productName=a.productName;
+      productDescription=a.productDescription||'';customerName=a.name||'';quantity=a.quantity||1;
+    }else{
+      amountCents=typeof a==='number'?a:0;productName=typeof b==='string'?b:'';
+      productDescription=typeof c==='string'?c:'';email='';customerName='';quantity=1;
+    }
+    if(!email)email=findEmail();
+    if(!customerName)customerName=findName();
+    var phone=findPhone();
+    if(!productName){alert('Product name is required.');return Promise.reject('no_product_name');}
+    if(!amountCents||amountCents<100){alert('Amount must be at least $1.00');return Promise.reject('invalid_amount');}
+    if(!email){alert('Please enter your email address.');return Promise.reject('no_email');}
+    var successBase=window.location.href.split('?')[0];
+    var __pLoc=(document.documentElement.lang||navigator.language||'en');
+    return fetch(apiBase+'/api/landing-pages/public/'+slug+'/payment/checkout',{
+      method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({email:email,name:customerName,phone:phone||'',amountCents:amountCents,productName:productName,productDescription:productDescription,quantity:quantity,locale:__pLoc,successUrl:successBase+'?payment=success&product='+encodeURIComponent(productName)+'&session_id={CHECKOUT_SESSION_ID}',cancelUrl:successBase+'?payment=cancelled'})
+    }).then(function(r){return r.json();}).then(function(d){
+      if(d.checkoutUrl){window.location.href=d.checkoutUrl;}
+      else{alert(d.error||'Failed to process payment');throw new Error(d.error);}
+    });
+  };
+  Object.defineProperty(window,'__processPayment',{value:__realProcessPayment,writable:false,configurable:false});
+  document.addEventListener('DOMContentLoaded',function(){
+    var urlParams=new URLSearchParams(window.location.search);
+    if(urlParams.get('payment')==='success'){
+      var sidP=urlParams.get('session_id');
+      if(sidP){try{fetch(apiBase+'/api/landing-pages/public/'+slug+'/checkout/confirm',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sessionId:sidP})}).catch(function(){});}catch(e){}}
+      var pName=urlParams.get('product')||'your item';
+      var overlay=document.createElement('div');overlay.id='payment-success-overlay';
+      overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
+      function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+      var subTxt=successSubtext||('Thank you for purchasing '+pName+'.');
+      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Payment Successful!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-pay-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
+      document.body.appendChild(overlay);
+      var pBtn=document.getElementById('lp-pay-success-btn');
+      if(pBtn){pBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
+    }
+  });
+})();
+</script>
+<script data-cart>
+(function(){
+  var slug='pfXxsZSFix';
+  var apiBase='https://my.chatbees.io';
+  var successSubtext='';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='';
+  function findCartEmail(){
+    var ids=['email','emailAddress','buyer-email','buyerEmail','user-email','userEmail','checkout-email','customer-email','contact-email'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.includes('@'))return el.value.trim();}
+    var inputs=document.querySelectorAll('input[type="email"],input[name*="email"],input[placeholder*="email"],input[placeholder*="Email"]');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.includes('@'))return inputs[j].value.trim();}
+    return '';
+  }
+  function findCartName(){
+    var ids=['name','fullName','full-name','buyer-name','buyerName','customer-name','userName','user-name'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value)return el.value.trim();}
+    var inputs=document.querySelectorAll('input[name*="name"]:not([name*="email"]):not([type="email"]),input[placeholder*="name"]:not([placeholder*="email"]):not([type="email"]),input[placeholder*="Name"]:not([type="email"])');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value)return inputs[j].value.trim();}
+    return '';
+  }
+  function findCartPhone(){var ids=['phone','phoneNumber','phone-number','tel','telephone','mobile','mobileNumber','cell','contact-phone','buyer-phone'];for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.trim())return el.value.trim();}var inputs=document.querySelectorAll('input[type="tel"],input[name*="phone"],input[name*="tel"],input[name*="mobile"],input[placeholder*="phone"],input[placeholder*="Phone"]');for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.trim())return inputs[j].value.trim();}return '';}
+  var __realCart=function(arg){
+    var items, email='', customerName='', successUrl, cancelUrl, currency;
+    if(Array.isArray(arg)){items=arg;}
+    else if(arg&&typeof arg==='object'){
+      items=arg.items;email=arg.email||'';customerName=arg.name||arg.customerName||'';
+      successUrl=arg.successUrl;cancelUrl=arg.cancelUrl;currency=arg.currency;
+    }
+    if(!Array.isArray(items)||items.length===0){alert('No items in cart.');return Promise.reject('no_items');}
+    var cleanItems=[];var totalCents=0;
+    for(var i=0;i<items.length;i++){
+      var it=items[i];if(!it||typeof it!=='object'){alert('Invalid item at position '+i);return Promise.reject('bad_item');}
+      var nm=typeof it.name==='string'?it.name.trim():'';
+      if(!nm){alert('Item '+(i+1)+' is missing a name.');return Promise.reject('no_name');}
+      var amt=typeof it.amountCents==='number'?it.amountCents:(typeof it.amount==='number'?Math.round(it.amount*100):NaN);
+      if(!isFinite(amt)||amt<1){alert('Item "'+nm+'" needs a valid amount in cents.');return Promise.reject('bad_amount');}
+      var qty=(typeof it.quantity==='number'&&it.quantity>0)?Math.floor(it.quantity):1;
+      cleanItems.push({name:nm,description:it.description||'',amountCents:amt,quantity:qty});
+      totalCents+=amt*qty;
+    }
+    if(totalCents<50){alert('Cart total must be at least $0.50');return Promise.reject('total_too_low');}
+    if(!email)email=findCartEmail();
+    if(!customerName)customerName=findCartName();
+    var cartPhone=findCartPhone();
+    if(!email){var p=window.prompt('Enter your email for the receipt:','');if(p&&p.indexOf('@')>-1){email=p.trim();}else{alert('An email address is required to complete checkout.');return Promise.reject('no_email');}}
+    var successBase=window.location.href.split('?')[0];
+    var body={email:email,name:customerName,items:cleanItems,locale:(document.documentElement.lang||navigator.language||'en')};
+    if(currency)body.currency=currency;
+    if(cartPhone)body.phone=cartPhone;
+    body.successUrl=successUrl||(successBase+'?cart=success&email='+encodeURIComponent(email)+'&session_id={CHECKOUT_SESSION_ID}');
+    body.cancelUrl=cancelUrl||(successBase+'?cart=cancelled');
+    return fetch(apiBase+'/api/landing-pages/public/'+slug+'/cart/checkout',{
+      method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify(body)
+    }).then(function(r){return r.json();}).then(function(d){
+      if(d.checkoutUrl){window.location.href=d.checkoutUrl;}
+      else{alert(d.error||'Failed to process checkout');throw new Error(d.error);}
+    });
+  };
+  try{Object.defineProperty(window,'__processCart',{value:__realCart,writable:false,configurable:false});}catch(e){window.__processCart=__realCart;}
+  document.addEventListener('DOMContentLoaded',function(){
+    var urlParams=new URLSearchParams(window.location.search);
+    if(urlParams.get('cart')==='success'){
+      var sidC=urlParams.get('session_id');
+      if(sidC){try{fetch(apiBase+'/api/landing-pages/public/'+slug+'/checkout/confirm',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sessionId:sidC})}).catch(function(){});}catch(e){}}
+      if(document.getElementById('payment-success-overlay')||document.getElementById('donation-success-overlay')||document.getElementById('cart-success-overlay'))return;
+      var overlay=document.createElement('div');overlay.id='cart-success-overlay';
+      overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
+      function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+      var subTxt=successSubtext||'Thank you for your order.';
+      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Order Confirmed!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-cart-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
+      document.body.appendChild(overlay);
+      var cBtn=document.getElementById('lp-cart-success-btn');
+      if(cBtn){cBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
+    }
+  });
+})();
+</script>  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="antialiased text-slate-900">
+  <!-- ============================================================================ -->
+  <!-- NAVIGATION: Campaign branding, anchor links, and quick action button         -->
+  <!-- ============================================================================ -->
+  <nav data-section="navbar" class="sticky top-0 z-50 border-b border-white/10 brand-gradient text-white">
+    <div class="mx-auto max-w-7xl section-shell py-4 flex items-center justify-between gap-4">
+      <div>
+        <p class="text-xs uppercase tracking-[0.35em] text-yellow-300/80">Re-Elect</p>
+        <a href="#hero" class="block text-lg md:text-xl font-bold">Mayor Alan Perry</a>
+      </div>
+      <div class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#accomplishments" class="hover:text-yellow-300">Accomplishments</a>
+        <a href="#vision" class="hover:text-yellow-300">Vision</a>
+        <a href="#support" class="hover:text-yellow-300">Support</a>
+        <a href="#signup" class="hover:text-yellow-300">Sign Up</a>
+      </div>
+      <a href="#support" class="inline-flex items-center rounded-full gold-gradient px-4 py-2 font-semibold text-[#1a1a2e] shadow-lg shadow-black/20">
+        Support the Campaign
+      </a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- ============================================================================ -->
+    <!-- HERO SECTION: Strong vote-and-support call to action                         -->
+    <!-- Mobile Padding: Text-safe on 375px screens                                   -->
+    <!-- ============================================================================ -->
+    <header data-section="hero" id="hero" class="brand-gradient text-white">
+      <div class="mx-auto max-w-7xl section-shell py-14 md:py-20 grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <p class="inline-flex items-center rounded-full border border-yellow-300/40 bg-white/10 px-4 py-2 text-sm text-yellow-200">
+            A proven leader for Hilton Head Island’s future
+          </p>
+          <h1 class="mt-5 text-4xl sm:text-5xl lg:text-6xl font-black leading-tight tracking-tight">
+            Re-Elect Mayor Alan Perry for a stronger, safer, more prosperous Hilton Head Island.
+          </h1>
+          <p class="mt-5 max-w-xl text-base sm:text-lg text-slate-200">
+            With more than 20 years of public service, Mayor Perry has helped drive smart growth, protect island character, and deliver results for families, workers, businesses, and visitors.
+          </p>
+          <div class="mt-8 flex flex-col sm:flex-row gap-4">
+            <a href="#signup" class="rounded-full gold-gradient px-6 py-3 font-bold text-[#1a1a2e] text-center shadow-lg">
+              Sign Up to Support
+            </a>
+            <a href="#support" class="rounded-full border border-white/25 px-6 py-3 font-semibold text-center hover:bg-white/10">
+              Vote, Volunteer, Donate
+            </a>
+          </div>
+          <dl class="mt-10 grid grid-cols-2 gap-4 max-w-xl">
+            <div class="rounded-2xl bg-white/10 p-4">
+              <dt class="text-sm text-slate-300">Public service</dt>
+              <dd class="mt-1 text-2xl font-bold">20+ Years</dd>
+            </div>
+            <div class="rounded-2xl bg-white/10 p-4">
+              <dt class="text-sm text-slate-300">Tourism growth</dt>
+              <dd class="mt-1 text-2xl font-bold">$2.8B</dd>
+            </div>
+          </dl>
+        </div>
+
+        <aside class="glass-card rounded-3xl border border-white/10 p-6 md:p-8 shadow-2xl">
+          <h2 class="text-2xl font-bold">Why this reelection matters</h2>
+          <ul class="mt-5 space-y-4 text-slate-100">
+            <li class="flex gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-yellow-300"></span><span>Keep Hilton Head Island fiscally responsible and future-ready.</span></li>
+            <li class="flex gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-yellow-300"></span><span>Protect the island’s natural beauty, culture, and quality of life.</span></li>
+            <li class="flex gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-yellow-300"></span><span>Invest in workforce housing, public safety, and infrastructure that lasts.</span></li>
+          </ul>
+          <div class="mt-6 rounded-2xl bg-black/20 p-5">
+            <p class="text-sm uppercase tracking-[0.25em] text-yellow-200">Election message</p>
+            <p class="mt-2 text-lg font-semibold">“Service, stewardship, and smart leadership for the next chapter.”</p>
+          </div>
+        </aside>
+      </div>
+    </header>
+
+    <!-- ============================================================================ -->
+    <!-- ACCOMPLISHMENTS SECTION: Key results delivered for the community             -->
+    <!-- ============================================================================ -->
+    <section data-section="accomplishments" id="accomplishments" class="bg-white">
+      <div class="mx-auto max-w-7xl section-shell py-14 md:py-20">
+        <div class="max-w-3xl">
+          <p class="text-sm font-semibold uppercase tracking-[0.3em] text-[#1a1a2e]">Track record</p>
+          <h2 class="mt-3 text-3xl sm:text-4xl font-bold text-slate-950">Real accomplishments. Measurable progress.</h2>
+          <p class="mt-4 text-slate-600">Mayor Perry’s leadership has focused on long-term planning, practical investments, and protecting the island’s unique identity while strengthening the economy.</p>
+        </div>
+
+        <div class="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+          <article class="rounded-2xl border border-slate-200 p-6 shadow-sm">
+            <h3 class="text-xl font-bold text-[#1a1a2e]">20+ years of public service</h3>
+            <p class="mt-3 text-slate-600">A steady record of leadership built on listening, collaboration, and getting things done for residents.</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 p-6 shadow-sm">
+            <h3 class="text-xl font-bold text-[#1a1a2e]">$2.8B tourism revenue growth</h3>
+            <p class="mt-3 text-slate-600">Support for a healthy visitor economy that sustains local jobs and strengthens small businesses.</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 p-6 shadow-sm">
+            <h3 class="text-xl font-bold text-[#1a1a2e]">160 new businesses in 2024</h3>
+            <p class="mt-3 text-slate-600">A business-friendly climate that encourages entrepreneurship, investment, and year-round opportunity.</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 p-6 shadow-sm">
+            <h3 class="text-xl font-bold text-[#1a1a2e]">Modern services & planning</h3>
+            <p class="mt-3 text-slate-600">Progress on emergency services modernization and strategic infrastructure planning for the future.</p>
+          </article>
+        </div>
+
+        <div class="mt-6 grid gap-5 lg:grid-cols-3">
+          <article class="rounded-2xl bg-slate-50 p-6">
+            <h3 class="font-bold">Workforce housing initiatives</h3>
+            <p class="mt-2 text-slate-600">Support for essential workers who keep the island moving, from hospitality to healthcare and public service.</p>
+          </article>
+          <article class="rounded-2xl bg-slate-50 p-6">
+            <h3 class="font-bold">Public safety improvements</h3>
+            <p class="mt-2 text-slate-600">Focused investment in the systems and readiness needed to keep neighborhoods and visitors safe.</p>
+          </article>
+          <article class="rounded-2xl bg-slate-50 p-6">
+            <h3 class="font-bold">Sustainability & cultural preservation</h3>
+            <p class="mt-2 text-slate-600">Commitment to environmental stewardship and preserving Gullah Geechee heritage for future generations.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================================ -->
+    <!-- VISION SECTION: Leadership priorities and six-point strategic plan           -->
+    <!-- ============================================================================ -->
+    <section data-section="vision" id="vision" class="bg-slate-950 text-white">
+      <div class="mx-auto max-w-7xl section-shell py-14 md:py-20">
+        <div class="max-w-3xl">
+          <p class="text-sm font-semibold uppercase tracking-[0.3em] text-yellow-300">Leadership vision</p>
+          <h2 class="mt-3 text-3xl sm:text-4xl font-bold">A six-point plan to protect what makes Hilton Head Island exceptional.</h2>
+        </div>
+
+        <div class="mt-10 grid gap-5 lg:grid-cols-2">
+          <article class="rounded-3xl border border-white/10 bg-white/5 p-6">
+            <h3 class="text-xl font-bold text-yellow-300">1. Economic development that works for residents</h3>
+            <p class="mt-2 text-slate-200">Grow the local economy with strategic partnerships, careful planning, and support for year-round businesses.</p>
+          </article>
+          <article class="rounded-3xl border border-white/10 bg-white/5 p-6">
+            <h3 class="text-xl font-bold text-yellow-300">2. Workforce housing solutions</h3>
+            <p class="mt-2 text-slate-200">Expand practical options so teachers, first responders, and service workers can live where they serve.</p>
+          </article>
+          <article class="rounded-3xl border border-white/10 bg-white/5 p-6">
+            <h3 class="text-xl font-bold text-yellow-300">3. Safe neighborhoods and modern emergency services</h3>
+            <p class="mt-2 text-slate-200">Continue strengthening public safety, preparedness, and response capabilities across the island.</p>
+          </article>
+          <article class="rounded-3xl border border-white/10 bg-white/5 p-6">
+            <h3 class="text-xl font-bold text-yellow-300">4. Infrastructure planning for the next generation</h3>
+            <p class="mt-2 text-slate-200">Invest wisely in roads, drainage, mobility, and essential systems before problems become crises.</p>
+          </article>
+          <article class="rounded-3xl border border-white/10 bg-white/5 p-6">
+            <h3 class="text-xl font-bold text-yellow-300">5. Environmental sustainability</h3>
+            <p class="mt-2 text-slate-200">Protect waterways, trees, beaches, and resilient coastal systems that define island life.</p>
+          </article>
+          <article class="rounded-3xl border border-white/10 bg-white/5 p-6">
+            <h3 class="text-xl font-bold text-yellow-300">6. Cultural preservation and community identity</h3>
+            <p class="mt-2 text-slate-200">Honor Gullah Geechee heritage and preserve the history, traditions, and stories that make Hilton Head Island unique.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================================ -->
+    <!-- COMMUNITY SECTION: Engagement, meet-and-greets, and outreach                 -->
+    <!-- ============================================================================ -->
+    <section data-section="community" class="bg-white">
+      <div class="mx-auto max-w-7xl section-shell py-14 md:py-20 grid lg:grid-cols-2 gap-10 items-start">
+        <div>
+          <p class="text-sm font-semibold uppercase tracking-[0.3em] text-[#1a1a2e]">Community engagement</p>
+          <h2 class="mt-3 text-3xl sm:text-4xl font-bold text-slate-950">Listen, learn, and lead with the community.</h2>
+          <p class="mt-4 text-slate-600">This campaign is built around open conversation and local connection. From neighborhood listening sessions to meet-and-greet events, residents can share priorities directly with Mayor Perry and the campaign team.</p>
+          <div class="mt-6 space-y-4">
+            <div class="rounded-2xl bg-slate-50 p-5">
+              <h3 class="font-bold">Neighborhood meet-and-greets</h3>
+              <p class="mt-1 text-slate-600">Small-group conversations across Hilton Head Island about safety, infrastructure, housing, and the economy.</p>
+            </div>
+            <div class="rounded-2xl bg-slate-50 p-5">
+              <h3 class="font-bold">Volunteer canvasses and phone banks</h3>
+              <p class="mt-1 text-slate-600">Join neighbors to spread the word, answer questions, and turn support into action.</p>
+            </div>
+            <div class="rounded-2xl bg-slate-50 p-5">
+              <h3 class="font-bold">Community updates</h3>
+              <p class="mt-1 text-slate-600">Stay informed with campaign news, event announcements, and opportunities to help.</p>
+            </div>
+          </div>
+        </div>
+
+        <aside class="rounded-3xl border border-slate-200 bg-[#1a1a2e] p-6 md:p-8 text-white shadow-xl">
+          <h3 class="text-2xl font-bold">Upcoming campaign events</h3>
+          <div class="mt-5 space-y-4">
+            <div class="rounded-2xl bg-white/8 p-4">
+              <p class="text-sm text-yellow-300">Meet & Greet</p>
+              <p class="mt-1 font-semibold">Community Coffee Chat</p>
+              <p class="text-sm text-slate-300">Talk with supporters about the future of the island.</p>
+            </div>
+            <div class="rounded-2xl bg-white/8 p-4">
+              <p class="text-sm text-yellow-300">Volunteer Event</p>
+              <p class="mt-1 font-semibold">Weekend Canvass Kickoff</p>
+              <p class="text-sm text-slate-300">Help reach voters with campaign priorities and voter reminders.</p>
+            </div>
+            <div class="rounded-2xl bg-white/8 p-4">
+              <p class="text-sm text-yellow-300">Town Conversation</p>
+              <p class="mt-1 font-semibold">Lunchtime Leadership Forum</p>
+              <p class="text-sm text-slate-300">A focused discussion on infrastructure, housing, and growth.</p>
+            </div>
+          </div>
+          <a href="#signup" class="mt-6 inline-flex rounded-full gold-gradient px-5 py-3 font-bold text-[#1a1a2e]">
+            Get Event Updates
+          </a>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============================================================================ -->
+    <!-- SUPPORT SECTION: Vote, volunteer, donate, and request a yard sign            -->
+    <!-- ============================================================================ -->
+    <section data-section="support" id="support" class="bg-slate-50">
+      <div class="mx-auto max-w-7xl section-shell py-14 md:py-20">
+        <div class="max-w-3xl">
+          <p class="text-sm font-semibold uppercase tracking-[0.3em] text-[#1a1a2e]">How to help</p>
+          <h2 class="mt-3 text-3xl sm:text-4xl font-bold text-slate-950">Support the campaign in the way that works best for you.</h2>
+        </div>
+
+        <div class="mt-10 grid gap-5 lg:grid-cols-4">
+          <a href="#signup" class="rounded-2xl bg-white p-6 shadow-sm border border-slate-200 hover:border-[#d4af37]">
+            <h3 class="font-bold text-[#1a1a2e]">Vote</h3>
+            <p class="mt-2 text-slate-600">Make a plan and encourage friends and neighbors to vote for proven leadership.</p>
+          </a>
+          <a href="#signup" class="rounded-2xl bg-white p-6 shadow-sm border border-slate-200 hover:border-[#d4af37]">
+            <h3 class="font-bold text-[#1a1a2e]">Volunteer</h3>
+            <p class="mt-2 text-slate-600">Help with events, outreach, and community engagement across the island.</p>
+          </a>
+          <button type="button" onclick="openDonationPanel()" class="text-left rounded-2xl bg-white p-6 shadow-sm border border-slate-200 hover:border-[#d4af37]">
+            <h3 class="font-bold text-[#1a1a2e]">Donate</h3>
+            <p class="mt-2 text-slate-600">Fuel campaign communications, outreach, and voter contact.</p>
+          </button>
+          <a href="#signup" class="rounded-2xl bg-white p-6 shadow-sm border border-slate-200 hover:border-[#d4af37]">
+            <h3 class="font-bold text-[#1a1a2e]">Request a yard sign</h3>
+            <p class="mt-2 text-slate-600">Show your support at home, at your business, or in your neighborhood.</p>
+          </a>
+        </div>
+
+        <div id="donation-panel" class="mt-8 hidden rounded-3xl bg-[#1a1a2e] p-6 md:p-8 text-white shadow-xl">
+          <div class="grid gap-6 lg:grid-cols-[1.2fr_1fr] items-start">
+            <div>
+              <h3 class="text-2xl font-bold">Contribute to keep the momentum going</h3>
+              <p class="mt-2 text-slate-300">Choose a preset amount or enter a custom contribution. Every donation helps share the campaign’s message and mobilize supporters.</p>
+              <div id="preset-buttons" class="mt-5 flex flex-wrap gap-3"></div>
+            </div>
+            <div class="rounded-2xl bg-white/8 p-5">
+              <label for="donor-email" class="block text-sm font-medium text-slate-200">Email</label>
+              <input id="donor-email" type="email" required class="mt-2 w-full rounded-xl border border-white/15 bg-white/10 px-4 py-3 text-white placeholder:text-slate-300 focus:border-yellow-300 focus:outline-none" placeholder="you@example.com" />
+              <label for="donor-name" class="mt-4 block text-sm font-medium text-slate-200">Name</label>
+              <input id="donor-name" type="text" class="mt-2 w-full rounded-xl border border-white/15 bg-white/10 px-4 py-3 text-white placeholder:text-slate-300 focus:border-yellow-300 focus:outline-none" placeholder="Your name" />
+              <label for="donor-message" class="mt-4 block text-sm font-medium text-slate-200">Message (optional)</label>
+              <textarea id="donor-message" rows="3" class="mt-2 w-full rounded-xl border border-white/15 bg-white/10 px-4 py-3 text-white placeholder:text-slate-300 focus:border-yellow-300 focus:outline-none" placeholder="Why you support Mayor Perry"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================================ -->
+    <!-- SIGN-UP SECTION: Prominent supporter form with webhook + success state       -->
+    <!-- ============================================================================ -->
+    <section data-section="signup" id="signup" class="bg-white">
+      <div class="mx-auto max-w-7xl section-shell py-14 md:py-20 grid lg:grid-cols-2 gap-10 items-start">
+        <div>
+          <p class="text-sm font-semibold uppercase tracking-[0.3em] text-[#1a1a2e]">Supporter sign-up</p>
+          <h2 class="mt-3 text-3xl sm:text-4xl font-bold text-slate-950">Join the team and stay connected.</h2>
+          <p class="mt-4 text-slate-600">Sign up to receive campaign updates, event invitations, volunteer opportunities, and important election reminders.</p>
+
+          <div class="mt-6 rounded-3xl bg-[#1a1a2e] p-6 text-white shadow-xl">
+            <h3 class="text-xl font-bold">PayMeGPT AI campaign assistant</h3>
+            <p class="mt-2 text-slate-300">Ask about voting, events, volunteer opportunities, or Mayor Perry’s platform.</p>
+            <div id="paymegpt-widget" class="mt-4 rounded-2xl border border-white/10 bg-white/5 p-4 min-h-40 flex items-center justify-center text-center text-slate-200">
+              <div>
+                <p class="font-semibold">Campaign Assistant Widget</p>
+                <p class="mt-1 text-sm">If the platform provides the embedded assistant, it will load here automatically.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="rounded-3xl border border-slate-200 bg-slate-50 p-6 md:p-8 shadow-sm">
+          <form id="supporter-form" class="contact-form space-y-5">
+            <div>
+              <label for="full-name" class="block text-sm font-medium text-slate-700">Full name</label>
+              <input id="full-name" name="full_name" type="text" required class="mt-2 w-full rounded-xl border border-slate-300 bg-white px-4 py-3 focus:border-[#d4af37] focus:outline-none" placeholder="Your name" />
+            </div>
+            <div>
+              <label for="email" class="block text-sm font-medium text-slate-700">Email</label>
+              <input id="email" name="email" type="email" required class="mt-2 w-full rounded-xl border border-slate-300 bg-white px-4 py-3 focus:border-[#d4af37] focus:outline-none" placeholder="you@example.com" />
+            </div>
+            <div>
+              <label for="phone" class="block text-sm font-medium text-slate-700">Phone</label>
+              <input id="phone" name="phone" type="tel" class="mt-2 w-full rounded-xl border border-slate-300 bg-white px-4 py-3 focus:border-[#d4af37] focus:outline-none" placeholder="Optional" />
+            </div>
+            <div>
+              <label for="interest" class="block text-sm font-medium text-slate-700">How would you like to help?</label>
+              <select id="interest" name="interest" class="mt-2 w-full rounded-xl border border-slate-300 bg-white px-4 py-3 focus:border-[#d4af37] focus:outline-none">
+                <option>Vote reminder</option>
+                <option>Volunteer</option>
+                <option>Host a yard sign</option>
+                <option>Attend a meet-and-greet</option>
+              </select>
+            </div>
+            <div>
+              <label for="message" class="block text-sm font-medium text-slate-700">Message</label>
+              <textarea id="message" name="message" rows="4" class="mt-2 w-full rounded-xl border border-slate-300 bg-white px-4 py-3 focus:border-[#d4af37] focus:outline-none" placeholder="Share your interest, questions, or support message"></textarea>
+            </div>
+            <button id="submit-btn" type="submit" class="w-full rounded-full gold-gradient px-6 py-3 font-bold text-[#1a1a2e] shadow-lg">
+              Join the Campaign
+            </button>
+            <p id="form-status" class="hidden rounded-xl p-4 text-sm"></p>
+          </form>
+          <div id="success-state" class="hidden rounded-2xl border border-green-200 bg-green-50 p-6 text-green-900">
+            <h3 class="text-xl font-bold">Thank you for supporting the campaign!</h3>
+            <p class="mt-2">We’ve received your information and will be in touch shortly with updates and ways to get involved.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================================================ -->
+  <!-- FOOTER: Campaign identity, contact reminder, and rights notice                -->
+  <!-- ============================================================================ -->
+  <footer data-section="footer" class="bg-[#1a1a2e] text-white">
+    <div class="mx-auto max-w-7xl section-shell py-10 flex flex-col md:flex-row gap-4 md:items-center md:justify-between">
+      <p class="font-semibold">Mayor Alan Perry for Hilton Head Island</p>
+      <p class="text-sm text-slate-300">Serving Hilton Head Island with experience, vision, and integrity.</p>
+    </div>
+  </footer>
+
+  <script>
+    // ===== DONATION PANEL =====
+    // Function: openDonationPanel()
+    // Purpose: Reveal the donation UI and generate preset buttons dynamically
+    function openDonationPanel() {
+      const panel = document.getElementById('donation-panel');
+      panel.classList.remove('hidden');
+
+      const presetWrap = document.getElementById('preset-buttons');
+      if (!presetWrap.dataset.rendered) {
+        const presets = (window.__donationConfig && window.__donationConfig.presets) || [25, 50, 100, 250];
+        presetWrap.innerHTML = '';
+        presets.forEach(function (dollars) {
+          const btn = document.createElement('button');
+          btn.type = 'button';
+          btn.className = 'rounded-full border border-white/20 bg-white/10 px-4 py-2 font-semibold text-white hover:bg-white/20';
+          btn.textContent = '$' + dollars;
+          btn.addEventListener('click', function () {
+            const email = document.getElementById('donor-email').value;
+            const name = document.getElementById('donor-name').value;
+            const message = document.getElementById('donor-message').value;
+            window.__processDonation({ amount: dollars, email: email, name: name, message: message });
+          });
+          presetWrap.appendChild(btn);
+        });
+        presetWrap.dataset.rendered = 'true';
+      }
+      panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    // ===== SUPPORTER FORM WEBHOOK =====
+    // Function: handleSupporterSubmit(e)
+    // Purpose: Send supporter leads to the campaign webhook and show success state
+    async function handleSupporterSubmit(e) {
+      e.preventDefault();
+      const form = e.target;
+      const btn = document.getElementById('submit-btn');
+      const status = document.getElementById('form-status');
+      const success = document.getElementById('success-state');
+
+      btn.disabled = true;
+      btn.textContent = 'Sending...';
+      status.className = 'hidden';
+
+      const fd = new FormData(form);
+      const payload = {
+        contactEmail: fd.get('email'),
+        contactName: fd.get('full_name'),
+        contactPhone: fd.get('phone') || undefined,
+        data: {
+          interest: fd.get('interest'),
+          message: fd.get('message')
+        }
+      };
+
+      try {
+        const res = await fetch('https://paymegpt.com/api/webhooks/flow/4306/d4a710661c403c730183f6dc2a888ce41ae6be94fb874294060359402331ac25', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+        if (!res.ok) throw new Error('Request failed');
+        form.classList.add('hidden');
+        success.classList.remove('hidden');
+      } catch (err) {
+        status.textContent = 'Something went wrong while submitting your information. Please try again.';
+        status.className = 'rounded-xl bg-red-50 p-4 text-sm text-red-700';
+      } finally {
+        btn.disabled = false;
+        btn.textContent = 'Join the Campaign';
+      }
+    }
+
+    document.getElementById('supporter-form').addEventListener('submit', handleSupporterSubmit);
+
+    // ===== OPTIONAL PAYMEGPT WIDGET HOOK =====
+    // Function: initializeCampaignAssistant()
+    // Purpose: Mount the assistant widget when a provider object is available
+    function initializeCampaignAssistant() {
+      if (window.PayMeGPT && typeof window.PayMeGPT.mount === 'function') {
+        window.PayMeGPT.mount('#paymegpt-widget', {
+          topic: 'Mayor Alan Perry reelection campaign',
+          placeholder: 'Ask about voting, events, volunteering, or the campaign platform.'
+        });
+      }
+    }
+    initializeCampaignAssistant();
+  </script>
+
+</body>
+</html>
